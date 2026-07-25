@@ -96,6 +96,8 @@ application-process answer.
 
 https://github.com/user-attachments/assets/cddaa469-23c0-4a60-88d9-44f5b077c501
 
+https://github.com/user-attachments/assets/23cd68ba-8314-4ba1-8d4f-a41f994e5a6e
+
 ## Engineering challenges solved
 
 The interesting part of this project wasn't wiring the happy path — it was what broke once
