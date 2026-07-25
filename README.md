@@ -1,3 +1,5 @@
+![Scheme Sahayak](assets/banner.png)
+
 # Scheme Sahayak
 
 **A voice-based government scheme eligibility assistant for Hindi and Malayalam speakers.**
@@ -31,6 +33,11 @@ audio bugs that show up only once you actually run it out loud. See
 [Engineering challenges](#engineering-challenges-solved) below for the specifics.
 
 ## Architecture
+
+![Architecture diagram](assets/architecture.png)
+
+Precise technical version of the same pipeline (source of truth — the illustration above is
+for visual overview only):
 
 ```mermaid
 flowchart LR
