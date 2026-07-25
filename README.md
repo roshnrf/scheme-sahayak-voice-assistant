@@ -75,6 +75,8 @@ threshold + generation logic, reusable outside the voice pipeline (see `scripts/
 
 Both pulled from actual test runs (see [`PROGRESS.md`](PROGRESS.md) for the full log).
 
+https://github.com/user-attachments/assets/cddaa469-23c0-4a60-88d9-44f5b077c501
+
 **Grounded answer (Malayalam)** — real scheme match, confidence 0.50:
 > **Q:** അഗ്നിപഥ് പദ്ധതി എന്താണ്? *("What is the Agnipath scheme?")*
 > **A:** അഗ്നിപഥ് പദ്ധതി എന്നത് ഇന്ത്യൻ സായുധ സേനയിലെ റിക്രൂട്ട്‌മെന്റിനായുള്ള ഒരു പദ്ധതിയാണ്. ഇത് മൂന്ന്
@@ -94,10 +96,8 @@ Both pulled from actual test runs (see [`PROGRESS.md`](PROGRESS.md) for the full
 professional-course scholarship scheme at confidence 0.475, correct detailed eligibility +
 application-process answer.
 
-https://github.com/user-attachments/assets/cddaa469-23c0-4a60-88d9-44f5b077c501
---
 https://github.com/user-attachments/assets/23cd68ba-8314-4ba1-8d4f-a41f994e5a6e
---
+
 ## Engineering challenges solved
 
 The interesting part of this project wasn't wiring the happy path — it was what broke once
