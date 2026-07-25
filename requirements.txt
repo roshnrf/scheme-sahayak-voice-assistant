@@ -1,0 +1,13 @@
+pipecat-ai[sarvam,silero]
+sarvamai>=0.1.25
+python-dotenv
+pyaudio
+pipecat-ai-tail
+
+# Phase 2: data-prep and retrieval only (not used by app/main.py)
+playwright
+langchain
+langchain-community
+langchain-huggingface
+faiss-cpu
+sentence-transformers
