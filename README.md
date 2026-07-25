@@ -1,4 +1,4 @@
-![Scheme Sahayak](assets/Scheme Sahayak.jpg)
+![Scheme Sahayak](assets/ss.jpg)
 
 # Scheme Sahayak
 
