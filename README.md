@@ -94,6 +94,8 @@ Both pulled from actual test runs (see [`PROGRESS.md`](PROGRESS.md) for the full
 professional-course scholarship scheme at confidence 0.475, correct detailed eligibility +
 application-process answer.
 
+https://github.com/user-attachments/assets/cddaa469-23c0-4a60-88d9-44f5b077c501
+
 ## Engineering challenges solved
 
 The interesting part of this project wasn't wiring the happy path — it was what broke once
