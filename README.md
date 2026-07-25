@@ -34,7 +34,7 @@ audio bugs that show up only once you actually run it out loud. See
 
 ## Architecture
 
-![Architecture diagram](assets/architecture.png)
+![Architecture diagram](assets/architecture.jpeg)
 
 Precise technical version of the same pipeline (source of truth — the illustration above is
 for visual overview only):
