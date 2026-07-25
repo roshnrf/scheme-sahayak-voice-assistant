@@ -70,6 +70,8 @@ threshold + generation logic, reusable outside the voice pipeline (see `scripts/
 | Retrieval | LangChain + FAISS | Per-language similarity search over the scheme dataset |
 | Embeddings | `BAAI/bge-m3` (local) | Free, on-device, strong Hindi/Malayalam performance — Sarvam has no embeddings API |
 | Turn detection | Silero VAD + Pipecat smart-turn | Built-in, tuned via `VADParams`, no custom turn-detection logic |
+| Data collection | Playwright | Scrapes en/hi/ml scheme content directly from myscheme.gov.in (client-rendered site) |
+| Observability | `pipecat-ai-tail` | Live terminal dashboard — conversation, logs, audio levels, TTFB/TTFA latency metrics |
 
 ## Demo — real transcripts, not cherry-picked
 
