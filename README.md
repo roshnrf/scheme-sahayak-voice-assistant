@@ -165,7 +165,7 @@ Run the voice assistant:
 python app/main.py --lang hi   # or --lang ml
 ```
 
-Optional — regenerate the dataset/index from scratch instead of using the included
+Optional = regenerate the dataset/index from scratch instead of using the included
 `data/schemes.json`:
 
 ```bash
@@ -187,25 +187,25 @@ Measured locally (Windows/PyAudio, no GPU) using `pipecat-ai-tail` during real H
 
 | Stage | Metric | Observed range |
 |---|---|---|
-| STT (Sarvam saaras:v3) | TTFB | 0.39 – 0.53s |
+| STT (Sarvam saaras:v3) | TTFB | 0.39 - 0.53s |
 | RAG retrieval (FAISS + threshold check) | Wall time | < 0.1s |
-| TTS (Sarvam bulbul:v3) | TTFB | 0.24 – 0.39s |
-| TTS | TTFA (first audio) | 0.30 – 1.02s |
-| **End-to-end (speech in → first spoken word)** | **p50** | **~1.0 – 1.5s** |
+| TTS (Sarvam bulbul:v3) | TTFB | 0.24 - 0.39s |
+| TTS | TTFA (first audio) | 0.30 - 1.02s |
+| **End-to-end (speech in -> first spoken word)** | **p50** | **~1.0 – 1.5s** |
 
-Below-threshold turns skip LLM entirely — RAG check + fixed TTS response, no generation latency.
+Below-threshold turns skip LLM entirely -> RAG check + fixed TTS response, no generation latency.
 
 ## Known limitations
 
-- `LocalAudioTransport` (PyAudio) has no acoustic echo cancellation — a headset is required
+- `LocalAudioTransport` (PyAudio) has no acoustic echo cancellation - a headset is required
   for clean turns; the mitigations above reduce but don't eliminate residual leak.
-- Sarvam's LLM occasionally returns an empty completion for a well-grounded prompt — handled
+- Sarvam's LLM occasionally returns an empty completion for a well-grounded prompt - handled
   via fallback, not eliminated at the source (Sarvam-side behavior, outside this project).
 - The 41-scheme dataset has real coverage gaps (agriculture-ministry schemes are
   under-represented due to an early scraping bug, since fixed for future scrapes but not
   backfilled).
-- Runs locally only — no hosted/deployed version. (Central government schemes only, per the
-  original project scope — no state-level schemes.)
+- Runs locally only - no hosted/deployed version. (Central government schemes only, per the
+  original project scope - no state-level schemes.)
 
 ## Build log
 
