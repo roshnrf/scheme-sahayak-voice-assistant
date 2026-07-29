@@ -181,6 +181,20 @@ python scripts/test_retrieval.py --lang hi
 python scripts/test_rag.py --lang hi
 ```
 
+## Latency
+
+Measured locally (Windows/PyAudio, no GPU) using `pipecat-ai-tail` during real Hindi voice sessions on 2026-07-25.
+
+| Stage | Metric | Observed range |
+|---|---|---|
+| STT (Sarvam saaras:v3) | TTFB | 0.39 – 0.53s |
+| RAG retrieval (FAISS + threshold check) | Wall time | < 0.1s |
+| TTS (Sarvam bulbul:v3) | TTFB | 0.24 – 0.39s |
+| TTS | TTFA (first audio) | 0.30 – 1.02s |
+| **End-to-end (speech in → first spoken word)** | **p50** | **~1.0 – 1.5s** |
+
+Below-threshold turns skip LLM entirely — RAG check + fixed TTS response, no generation latency.
+
 ## Known limitations
 
 - `LocalAudioTransport` (PyAudio) has no acoustic echo cancellation — a headset is required
