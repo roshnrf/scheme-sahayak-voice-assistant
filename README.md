@@ -4,7 +4,7 @@
 
 **A voice-based government scheme eligibility assistant for Hindi and Malayalam speakers.**
 
-Speak a question, get a spoken answer — grounded in real central government scheme data,
+Speak a question, get a spoken answer - grounded in real central government scheme data,
 with an honest "I'm not certain" instead of a confident guess whenever the system doesn't
 actually know.
 
@@ -18,7 +18,7 @@ actually know.
 
 ## What this actually is (and isn't)
 
-Voice-based, multilingual government scheme discovery isn't a new idea — [myScheme](https://www.myscheme.gov.in)
+Voice-based, multilingual government scheme discovery isn't a new idea - [myScheme](https://www.myscheme.gov.in)
 already runs its own voice-enabled AI chatbot, and India's [BHASHINI](https://bhashini.gov.in)
 initiative launched **VoicERA**, a national open-source voice AI stack, explicitly targeting
 this exact use case (Feb 2026). [Jugalbandi](https://github.com/OpenNyAI) and other
@@ -26,7 +26,7 @@ AI4Bharat-backed projects have covered similar ground over WhatsApp.
 
 This project isn't trying to compete with any of that. It's a **from-scratch personal build**
 of the same real problem, on a deliberately locked-down stack (Pipecat, Sarvam AI, LangChain +
-FAISS — no swapping in a different framework if things get hard), done to actually learn and
+FAISS - no swapping in a different framework if things get hard), done to actually learn and
 demonstrate the engineering: building a full voice pipeline, wiring a RAG system into it,
 getting retrieval confidence calibration right, and debugging the genuinely nasty real-time
 audio bugs that show up only once you actually run it out loud. See
